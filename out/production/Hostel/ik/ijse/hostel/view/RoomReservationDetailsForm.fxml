@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AnchorPaneContext" prefHeight="632.0" prefWidth="1317.0" style="-fx-background-color: CDCDCD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.ijse.hostel.controller.RoomReservationDetailsFormController">
+   <children>
+      <Label layoutX="82.0" layoutY="21.0" prefHeight="53.0" prefWidth="312.0" text="Rooms Reservation Details">
+         <font>
+            <Font name="System Bold" size="23.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblRoomsReservationDetails" layoutX="170.0" layoutY="137.0" prefHeight="443.0" prefWidth="989.0">
+         <columns>
+            <TableColumn fx:id="colStudentId" prefWidth="104.00006103515625" text="Student Id" />
+            <TableColumn fx:id="colRoomTypeId" prefWidth="134.99996948242188" text="Room Type Id" />
+            <TableColumn fx:id="colType" minWidth="2.0" prefWidth="247.0" text="Type" />
+            <TableColumn fx:id="colKeyMoney" minWidth="2.0" prefWidth="141.0" text="Key Money" />
+            <TableColumn fx:id="colPaidAmount" minWidth="0.0" prefWidth="117.0" text="Paid Amount" />
+            <TableColumn fx:id="colDateFrom" minWidth="0.0" prefWidth="118.0" text="Date From" />
+            <TableColumn fx:id="colDateTo" minWidth="0.0" prefWidth="107.0" text="Date To" />
+         </columns>
+      </TableView>
+      <ImageView fitHeight="53.0" fitWidth="57.0" layoutX="16.0" layoutY="20.0" pickOnBounds="true">
+         <image>
+            <Image url="@../asserts/reservationDetails.jpg" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

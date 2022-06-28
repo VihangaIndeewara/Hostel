@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="AllDashBoardContent" prefHeight="690.0" prefWidth="1605.0" style="-fx-background-color: CDCDCD;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ik.ijse.hostel.controller.DashBoardFormController">
+   <children>
+      <AnchorPane layoutX="7.0" layoutY="10.0" prefHeight="672.0" prefWidth="264.0" style="-fx-background-color: #5d858f;">
+         <children>
+            <Label layoutX="65.0" layoutY="14.0" prefHeight="31.0" prefWidth="134.0" text="Menu">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+            </Label>
+            <ImageView fitHeight="31.0" fitWidth="34.0" layoutX="15.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/menu.png" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="2.0" layoutY="138.0" onAction="#btnAddStudentOnAction" prefHeight="53.0" prefWidth="257.0" text="   Add Student">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <JFXButton layoutX="3.0" layoutY="197.0" onAction="#btnAddRoomOnAction" prefHeight="53.0" prefWidth="257.0" text="Add Room">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="15.0" layoutY="144.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/students.jpg" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="16.0" layoutY="203.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/rooms.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton buttonType="RAISED" layoutX="20.0" layoutY="606.0" onAction="#btnLogOutOnAction" prefHeight="31.0" prefWidth="228.0" style="-fx-background-color: EE4E4E;" text="Log Out">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <Separator layoutX="3.0" layoutY="52.0" prefHeight="4.0" prefWidth="257.0" />
+            <JFXButton layoutX="7.0" layoutY="256.0" onAction="#btnReserveRoomOnAction" prefHeight="53.0" prefWidth="257.0" text="   Reserve Room">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="15.0" layoutY="262.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/reservation.jpg" />
+               </image>
+            </ImageView>
+            <JFXButton layoutX="7.0" layoutY="316.0" onAction="#btnReservationDetailsOnAction" prefHeight="53.0" prefWidth="257.0" text="           Reservation Details">
+               <font>
+                  <Font name="System Bold" size="19.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </JFXButton>
+            <ImageView fitHeight="41.0" fitWidth="43.0" layoutX="16.0" layoutY="322.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../asserts/reservationDetails.jpg" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <Label fx:id="lblTime" layoutX="1174.0" layoutY="18.0" prefHeight="21.0" prefWidth="94.0" text="03:55:11">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblDate" layoutX="1370.0" layoutY="18.0" prefHeight="21.0" prefWidth="103.0" text="2022-06-23">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font>
+      </Label>
+      <AnchorPane fx:id="AnchorPaneContext" layoutX="284.0" layoutY="52.0" prefHeight="632.0" prefWidth="1317.0" style="-fx-background-color: CDCDCD;" />
+   </children>
+</AnchorPane>
