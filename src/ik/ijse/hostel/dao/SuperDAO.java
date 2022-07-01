@@ -1,2 +1,4 @@
-package ik.ijse.hostel.dao;public interface SuperDAO {
+package ik.ijse.hostel.dao;
+
+public interface SuperDAO {
 }

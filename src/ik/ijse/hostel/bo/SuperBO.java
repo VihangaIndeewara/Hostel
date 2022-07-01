@@ -1,2 +1,4 @@
-package ik.ijse.hostel.bo;public interface SuperBO {
+package ik.ijse.hostel.bo;
+
+public interface SuperBO {
 }

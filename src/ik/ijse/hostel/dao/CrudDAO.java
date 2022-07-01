@@ -2,14 +2,16 @@ package ik.ijse.hostel.dao;
 
 import javafx.collections.ObservableList;
 
-public interface CrudDAO<T,id> {
-    boolean save(T t);
+import java.io.IOException;
 
-    boolean update(T t);
+public interface CrudDAO<T,id> extends SuperDAO {
+    boolean save(T t) throws IOException;
 
-    boolean delete(id id);
+    boolean update(T t) throws IOException;
 
-    ObservableList<T> getAll();
+    boolean delete(id id) throws IOException;
 
-    String generateNewId();
+    ObservableList<T> getAll() throws IOException;
+
+    String generateNewId() throws IOException;
 }
